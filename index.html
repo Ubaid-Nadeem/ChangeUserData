@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Change-User-Data</title>
+</head>
+
+<body>
+
+    <div class="log-in form" id="login_box">
+
+        <img src="login.jpeg" alt="">
+        <div class="inputdiv">
+            <input type="text" placeholder="Name" class="loginfeild" id="name">
+            <input type="emial" name="email" id="email" placeholder=" E mail" class="loginfeild">
+            <input type="password" name="pasword" id="password" placeholder=" Password" class="loginfeild">
+            <label> <input type="checkbox" onclick="show()" class="showoff"> <span>Show Password</span> </label>
+            <button class="Signin-acc  bttn" onclick="signup()">Sign up </button>
+            <button class="login-acc bttn" onclick="login()">Log in</button>
+        </div>
+
+    </div>
+
+    <div class="userdata" id="userdata">
+        <table id="table" border="1">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+<div class="changeing-details" id="changeing_details">
+    <h1>Change Details</h1>
+ <p>  Name <input type="text" name="" id="changename"></p>
+  <p> Email <input type="email" name="" id="changeemail"> </p>
+  <p> password <input type="password" name="" id="changepas"></p>
+<button class="savechange" id="savechange">Save Change</button>
+<button class="savechange cancel" id="cancel">Cancel</button>
+</div>
+
+
+
+    <div class="userbox" id="userbox">
+        <div class="userinfo">
+            <h1 id="userName">Welcome </h1>
+            <button>Edit</button>
+            <button>Delete</button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
